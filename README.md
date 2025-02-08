@@ -2,8 +2,11 @@
     <h2>Bienvenue à Soni Ferme 🐓</h2>
     <p>Le poulailler où la qualité rencontre le prix abordable !</p>
     
-    <div class="image">
-        <img src="https://exemple.com/image-poulet.jpg" alt="Image de poulet" style="width: 100%; max-width: 400px;">
+    <div class="image-carousel">
+        <img src="https://github.com/Ori20030511/Sanikara-ferme.html/blob/main/images%20(1).png.jpg?raw=true" alt="Image 1">
+        <img src="https://github.com/Ori20030511/Sanikara-ferme.html/blob/main/images%20(2).png.jpg?raw=true" alt="Image 2">
+        <img src="https://github.com/Ori20030511/Sanikara-ferme.html/blob/main/images%20(3).png.jpg?raw=true" alt="Image 3">
+        <img src="https://github.com/Ori20030511/Sanikara-ferme.html/blob/main/images.jpeg?raw=true" alt="Image 4">
     </div>
 
     <div class="price">
@@ -12,7 +15,7 @@
 
     <div class="order">
         <h3>📦 Commandez maintenant</h3>
-        <form action="http://localhost:8080/dev%20web/traitement.php" method="POST">
+        <form action="test.php" method="POST">
             <label for="quartier">Sélectionnez votre quartier :</label><br>
             <select id="quartier" name="quartier" required>
                 <option value="Sakhola">Sakhola</option>
