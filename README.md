@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soni Ferme - Commande en ligne</title>
     <style>
+        /* Mise en forme générale */
         body {
             font-family: Arial, sans-serif;
             text-align: center;
@@ -12,12 +13,16 @@
             color: white;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
-        
+
         .container {
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
         }
 
+        /* Titres */
         h2 {
             font-size: 28px;
             animation: fadeIn 2s ease-in-out;
@@ -36,6 +41,7 @@
             animation: bounce 1.5s infinite alternate;
         }
 
+        /* Style du bouton */
         .btn {
             padding: 12px 25px;
             background-color: #007bff;
@@ -55,27 +61,32 @@
             transform: scale(1.1);
         }
 
+        /* Style du formulaire */
         form {
             background: rgba(255, 255, 255, 0.2);
             padding: 15px;
             border-radius: 10px;
             display: inline-block;
             margin-top: 20px;
+            width: 100%;
+            max-width: 400px; /* Limite la largeur du formulaire */
         }
 
         select, input {
             padding: 8px;
-            width: 80%;
+            width: 100%;
             margin-top: 10px;
             border-radius: 5px;
             border: none;
             font-size: 16px;
         }
 
+        /* Section de contact */
         .contact {
             margin-top: 30px;
         }
 
+        /* Animations */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(-20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -85,10 +96,29 @@
             from { transform: translateY(0); }
             to { transform: translateY(-10px); }
         }
+
+        /* Responsive - Mobile friendly */
+        @media (max-width: 600px) {
+            .price, .btn {
+                width: 90%;
+                font-size: 16px;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .contact p {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
-
     <div class="container">
         <h2>Bienvenue à Soni Ferme 🐓</h2>
         <p>Le poulailler où la qualité rencontre le prix abordable !</p>
@@ -123,9 +153,7 @@
             <p>📍 Adresse : Diawara, Wodiga 1</p>
             <p>📱 <a href="tel:+221772569700" class="btn">📞 Appeler</a></p>
             <p>📧 <a href="mailto:bachirdrame408@gmail.com" class="btn">📧 Envoyer un e-mail</a></p>
-
         </div>
     </div>
-
 </body>
 </html>
